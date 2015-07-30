@@ -2,7 +2,7 @@
 /*
 Esse algorítimo tem como função verificar 
 se a URL e realmente valida e procurar por 
-texto/string dentro da pagina.
+string dentro da pagina.
 
 Autor: Rhylton de Figueirêdo 
 E-mail: contato@gamapixel.com.br
