@@ -1,8 +1,12 @@
 <?php
 /*
 Esse algorítimo tem como função verificar 
-se um texto ou string esta realmente na pagina.
-http://rhylton.com.br
+se a URL e realmente valida e procurar por 
+texto/string dentro da pagina.
+
+Autor: Rhylton de Figueirêdo 
+E-mail: contato@gamapixel.com.br
+Site: http://rhylton.com.br
 */
 
 $url 	= "http://rhylton.com.br"; //Adicionar URL do site
@@ -22,7 +26,6 @@ function checkURL($url){
 	}
 
 	return $resultURL;
-
 }
 
 
@@ -35,11 +38,8 @@ function checkTXT($txt){
 	}
 
 	return $resultTXT;
-
 }
 
 echo "URL: ".checkURL($buscaUrl)."<br />"."TEXTO: ".checkTXT($textoUrl); 
-
-
 
 ?>
