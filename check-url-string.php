@@ -34,9 +34,9 @@ function checkTXT(){
 	global $textoUrl;
 
 	if($textoUrl==false){
-	    $resultTXT = "Esse texto não existe :'(";
+	    $resultTXT = "Essa string não existe :'(";
 	}else{
-	    $resultTXT = "Texto OK :)";
+	    $resultTXT = "String OK :)";
 	}
 	return $resultTXT;
 
