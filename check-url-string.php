@@ -10,7 +10,7 @@ Site: http://rhylton.com.br
 */
 
 $url 	= "http://rhylton.com.br"; //Adicionar URL do site
-$texto 	= "contato"; //Texo no qual você quer verificar
+$texto 	= "contato"; //Sring no qual você quer verificar Ex: "<!DOCTYPE html>" - src="social.png"
 
 $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
