@@ -17,29 +17,30 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $buscaUrl = curl_exec($curl);
 $textoUrl = strpos($buscaUrl, $texto);
 
-function checkURL($url){
+function checkURL(){
+	global $buscaUrl;
 
-	if($url==false){
+	if($buscaUrl==false){
 	    $resultURL = "URL INVALIDO!!!";
 	}else{
 	    $resultURL = "URL VALIDO!!";
 	}
-
 	return $resultURL;
+
 }
 
 
-function checkTXT($txt){
+function checkTXT(){
+	global $textoUrl;
 
-	if($txt==false){
+	if($textoUrl==false){
 	    $resultTXT = "Esse texto não existe :'(";
 	}else{
 	    $resultTXT = "Texto OK :)";
 	}
-
 	return $resultTXT;
-}
 
-echo "URL: ".checkURL($buscaUrl)."<br />"."TEXTO: ".checkTXT($textoUrl); 
+}
+echo "URL: ".checkURL()."<br />"."TEXTO: ".checkTXT(); 
 
 ?>
